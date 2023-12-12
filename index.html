@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top bg-transparent" >
+    <div class="container-fluid">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="logo" height="40px" width="50px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- bannner -->
+
+  <video src="y2mate.com - Nature Video 30 SecondsWhatsApp Status VideoNature Background Videos_1080p.mp4"  autoplay muted ></video>
+
+  <!-- card -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="pexels-alex-conchillos-3941855.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="pexels-alex-conchillos-3941855.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="pexels-alex-conchillos-3941855.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+
+
+  <!-- subcomponent -->
+
+  <div class="container1">
+
+    <img src="" alt="" data-aos="fade-right">
+    <div class="first" data-aos="fade-left">
+      <h1>Welcome to perfumes selection where we can full from urs dream </h1>
+      <p>Know more <i class="fa-solid fa-arrow-right"></i></p>
+    </div>
+  </div>
+
+  <div class="container2">
+
+   
+    <div class="first"  data-aos="fade-right">
+      <h1>Welcome to perfumes selection where we can full from urs dream </h1>
+      <p>Know more <i class="fa-solid fa-arrow-right"></i></p>
+    </div>
+    <img src="https://www.freepnglogos.com/uploads/perfume-png/perfume-azteca-secreto-21.png" alt="" data-aos="fade-left">
+  </div>
+
+
+
+  <!-- perfumes offers -->
+  <div class="offers" data-aos="fade-right">
+    <img src="https://s3images.coroflot.com/user_files/individual_files/large_653993_nrkwq36bondpxv4z_oy_lpdso.jpg"
+      alt="">
+  </div>
+
+ 
+
+  <div class="container1">
+    <div class="first" data-aos="fade-right">
+      <h1>Welcome to perfumes selection where we can full from urs dream </h1>
+      <p>Know more <i class="fa-solid fa-arrow-right"></i></p>
+    </div>
+    <img src="https://www.freepnglogos.com/uploads/perfume-png/perfume-azteca-secreto-21.png" alt="" data-aos="fade-left">
+  </div>
+
+
+  <div class="container2">
+    <img src="https://www.freepnglogos.com/uploads/perfume-png/perfume-azteca-secreto-21.png" alt=""data-aos="fade-right">
+    <div class="first" data-aos="fade-left">
+      <h1>Welcome to perfumes selection where we can full from urs dream </h1>
+      <p>Know more <i class="fa-solid fa-arrow-right"></i></p>
+    </div>
+
+  </div>
+
+  <div class="offers" data-aos="fade-right">
+    <img src="https://t3.ftcdn.net/jpg/03/46/22/70/360_F_346227029_ZnShXInuuhHBvhOzF0i37xFBIVNVgRd6.jpg" alt="">
+  </div>
+
+  <div class="container1">
+
+    <img src="https://www.freepnglogos.com/uploads/perfume-png/perfume-azteca-secreto-21.png" alt="" data-aos="fade-right">
+    <div class="first" data-aos="fade-left">
+      <h1>Welcome to perfumes selection where we can full from urs dream </h1>
+      <p>Know more <i class="fa-solid fa-arrow-right"></i></p>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span style="color: #fff;">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div style="color: #fff;">
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="" style="color: #fff;">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="color: #fff;">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="color: #fff;">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="color: #fff;">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="color: #fff;">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        offset:320,
+        duration:1200
+      }
+    );
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

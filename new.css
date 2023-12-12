@@ -1,0 +1,81 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+video {
+    width: 100%;
+}
+.container1{
+    background-color: #e4e0e0;
+    display: flex;
+}
+.container1 .first h1{
+    max-width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.container1 .first{
+    padding: 10% 8%;
+}
+.container1 img{
+    margin: 3% 4%;
+}
+.container1 .first p{
+
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 3% 0%;
+    color: rgb(219, 74, 98);
+}
+
+.container2{
+    
+    display: flex;
+}
+.container2 .first h1{
+    max-width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.container2 .first{
+    padding: 10% 8%;
+}
+.container2 img{
+    margin: 4% 9%;
+}
+.container2 .first p{
+
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 3% 0%;
+    color: rgb(219, 74, 98);
+}
+
+.offers img{
+    width: 95rem;
+    height: 30rem;
+}
+ 
+.navbar .navbar-nav  .nav-link{
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+    margin-left: 1.5rem;
+}
+.navbar .navbar-nav  .nav-link:hover{
+  color: rgb(200, 56, 56);
+  transform: scale(1.09);
+}
+
+
+
+
+

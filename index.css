@@ -1,0 +1,88 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+video{
+    width: 100%;
+}
+
+.card{
+    margin: 5% 8%;
+    
+}
+
+
+element.style {
+    width: 450px;
+    height: 400px;
+}
+
+.container1{
+    background: #eae9e9;
+    display: flex;
+}
+.container1 .first h1{
+    width: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.first{
+    padding: 6% 8%;
+}
+.container1 img{
+    margin: 4% 9%;
+}
+.container1 .first p{
+
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 3% 0%;
+    color: rgb(219, 74, 98);
+}
+
+.offers img{
+    width: 95rem;
+    height: 30rem;
+}
+
+
+
+.container2{
+    background: #ffffff;
+    display: flex;
+}
+.container2 .first h1{
+    max-width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.first{
+    padding: 6% 8%;
+}
+.container2 img{
+    margin: 4% 9%;
+}
+.container2 .first p{
+
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 3% 0%;
+    color: rgb(219, 74, 98);
+}
+
+.offers img{
+    width: 95rem;
+    height: 30rem;
+}
+
+footer{
+    background: rgb(215, 57, 83);
+    color: #fff;
+}
